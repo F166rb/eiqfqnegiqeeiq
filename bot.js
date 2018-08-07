@@ -440,8 +440,6 @@ delete warn[message.author.id];
 
 
 
-const ms = require("ms");
-const fs = require("fs");
 var user = {};
 var warn = {};
 client.on('message', async function(message) {
