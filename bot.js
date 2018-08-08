@@ -371,23 +371,6 @@ client.on("guildMemberAdd", function(member) {
 
 
 
-//صاحب البوت
-
-
-
-var prefix = "+";
-client.on('message', message => {
-  if (!message.content.startsWith(prefix)) return;
-  const verifed = ["355101114024329227"];
-if (message.content.startsWith(prefix + 'owner')) {
-if( verifed.some(word => message.author.id.includes(word)) ) {    return message.channel.sendMessage(` :loudspeaker:    جا صاحب البوت هنا الكل يوقف :sparkles: ` + `✅`)
-} else {
-   message.reply(' انت لست صاحب البوت !  ' + '❌');   
-}
-}
-});
-
-
 
 
 
