@@ -429,16 +429,6 @@ client.on('message', message => {
 
 
 
-//ترحيب في خاص
-
-client.on("guildMemberAdd", member => {
-  member.createDM().then(function (channel) {
-  return channel.send(`ولكم نورت السيرفر ${member} `) 
-}).catch(console.error)
-
-});
-
-
 
 
 
