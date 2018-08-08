@@ -266,9 +266,9 @@ client.on('message', message => {
 
 
    client.on("message", message => {
-    var prefix = "+";
+    var prefix = "-";
             var args = message.content.substring(prefix.length).split(" ");
-            if (message.content.startsWith(prefix + "clear")) {
+            if (message.content.startsWith(prefix + "مسح")) {
                 if (!message.member.hasPermission("MANGE_MESSAGES"))  return;
  if (!args[1]) {
                                 let embed3 = new Discord.RichEmbed()
@@ -514,7 +514,7 @@ client.on('message', message => {
   .setThumbnail(message.author.avatarURL)  
   .setAuthor(message.author.username)
 .setDescription("معلومات عن الحــساب")
-               .setFooter(`YourName Bot.`, '')
+               .setFooter(`Yazeed '♪.`, '')
   .setColor("#9B59B6")
   .addField("اســـم الحســاب", `${message.author.username}`)
   .addField('كود الحساب الخاص', message.author.discriminator)
