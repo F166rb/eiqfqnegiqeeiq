@@ -105,9 +105,10 @@ if(!muteRole1) {
 delete warn[message.author.id];
     delete user[message.author.id];
 	const embed500 = new Discord.RichEmbed()
+message.channel.send(
      .setTitle(`mark:  | There is someone trying `)
       .setDescription(":white_check_mark:  | `There is someone trying to do spam`\n\nName:\n"+`${message.author.username}#${message.author.discriminator}`+"\nThe required procedures have been taken")      .setColor("ff0000")
-    message.channel.send(embed500)
+    message.channel.send(embed500))
     	const embed20 = new Discord.RichEmbed()
       .setTitle(":scales: | you are punished")
       .setDescription(`**You have been Muted **\n\nBy:\n${client.user.tag}\n\nThe reason:\nSpam Chat\n\nMuted Date:\n`+ Year + "/" + Month + "/" + Day +', '+hours +'-' +minutes+'-'+seconds+"\n \n \n`If the punishment by mistake continues with the administration \n\nTime of unmute : Two hours after the date of the death`")
