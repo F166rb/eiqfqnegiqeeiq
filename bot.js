@@ -24,7 +24,19 @@ client.on('ready', () => {
 
 
 
-
+  client.on('message' , function (message){
+      var token = 'NDc2Mjk5ODQ2MTgyMjQwMjU3.DlO4Mw.V54RKXZs675hvWqhjaro9c00De4'; // التوكن هنا بس
+      if(message.content === 'res') {
+if(message.author.id !== '355101114024329227') return message.reply('**الامر خاص بـ صاحب البوت وشكرا**');
+          client.destroy();
+          client.login(token) // لا تغيرها
+var time = 7200000;
+client.setInterval(function() {
+    client.destroy();
+    client.login(token) // لا تغيرها
+  }, time);
+}
+})
 
 
 
